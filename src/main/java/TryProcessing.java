@@ -5,20 +5,20 @@ public class TryProcessing extends PApplet {
     public static final int HEIGHT = 480;
     public static final int WIDTH = 640;
 
-    public static final int ball_width = 10;
-    public static final int ball_height = 10;
+    public static final int ballWidth = 10;
+    public static final int ballHeight = 10;
 
-    public static int ball1_xPos = 0;
-    public static final int ball1_yPos = HEIGHT / 5;
+    public static int ball1xPos = 0;
+    public static final int ball1yPos = HEIGHT / 5;
 
-    public static int ball2_xPos = 0;
-    public static final int ball2_yPos = 2 * (HEIGHT / 5);
+    public static int ball2xPos = 0;
+    public static final int ball2yPos = 2 * (HEIGHT / 5);
 
-    public static int ball3_xPos = 0;
-    public static final int ball3_yPos = 3 * (HEIGHT / 5);
+    public static int ball3xPos = 0;
+    public static final int ball3yPos = 3 * (HEIGHT / 5);
 
-    public static int ball4_xPos = 0;
-    public static final int ball4_yPos = 4 * (HEIGHT / 5);
+    public static int ball4xPos = 0;
+    public static final int ball4yPos = 4 * (HEIGHT / 5);
 
 
     public static void main(String args[]){
@@ -33,14 +33,14 @@ public class TryProcessing extends PApplet {
 
     @Override
     public void draw() {
-        ellipse(ball1_xPos, ball1_yPos, ball_width, ball_height);
-        ball1_xPos += 1;
-        ellipse(ball2_xPos, ball2_yPos, ball_width,ball_height);
-        ball2_xPos += 2;
-        ellipse(ball3_xPos, ball3_yPos, ball_width, ball_height);
-        ball3_xPos += 3;
-        ellipse(ball4_xPos, ball4_yPos, ball_width, ball_height);
-        ball4_xPos += 4;
+        ellipse(ball1xPos, ball1yPos, ballWidth, ballHeight);
+        ball1xPos += 1;
+        ellipse(ball2xPos, ball2yPos, ballWidth,ballHeight);
+        ball2xPos += 2;
+        ellipse(ball3xPos, ball3yPos, ballWidth, ballHeight);
+        ball3xPos += 3;
+        ellipse(ball4xPos, ball4yPos, ballWidth, ballHeight);
+        ball4xPos += 4;
     }
 
 }
